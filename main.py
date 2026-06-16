@@ -1,4 +1,5 @@
 import asyncio
+import os
 import logging
 from datetime import datetime
 from aiogram import Bot, Dispatcher, Router
@@ -9,7 +10,7 @@ import aiosqlite
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = "TELEGRAM_BOT_TOKEN"
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
