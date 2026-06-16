@@ -9,7 +9,7 @@ import aiosqlite
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+BOT_TOKEN = "BOT_TOKEN"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
